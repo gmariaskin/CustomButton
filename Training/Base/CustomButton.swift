@@ -11,6 +11,7 @@ class CustomButton: UIButton {
     
     var text: String
     var cornerRadius: Int
+  
     
     init(txt: String, cR: Int) {
         self.cornerRadius = cR

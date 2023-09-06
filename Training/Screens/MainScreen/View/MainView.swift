@@ -25,17 +25,23 @@ class MainView: UIView {
     
     private func setup() {
         
+        backgroundColor = .gray
+        
         addSubview(button1)
         addSubview(button2)
         
         button1.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.left.equalToSuperview()
+            make.width.equalTo(100)
+            make.height.equalTo(100)
         }
         
         button2.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.right.equalToSuperview()
+            make.width.equalTo(100)
+            make.height.equalTo(100)
         }
     }
     
@@ -43,6 +49,9 @@ class MainView: UIView {
         
         let button = CustomButton(txt: text, cR: radius)
         button.setTitle(button.text, for: .normal)
+        button.layer.cornerRadius = CGFloat(radius)
+        button.setTitleColor(.black, for: .normal)
+        button.backgroundColor = .white
         return button
     }
 }
