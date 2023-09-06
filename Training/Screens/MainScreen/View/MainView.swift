@@ -8,11 +8,15 @@
 import UIKit
 import SnapKit
 
-
 class MainView: UIView {
     
     lazy var button1: UIButton = createButton(text: "Okay", radius: 10)
     lazy var button2: UIButton = createButton(text: "Not Okay", radius: 20)
+    
+    private let customButton2: CustomButton2 = {
+        let obj = CustomButton2(text: "TEST", radius: 50)
+        return obj
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,19 +33,21 @@ class MainView: UIView {
         
         addSubview(button1)
         addSubview(button2)
+        addSubview(customButton2)
         
         button1.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.left.equalToSuperview()
-            make.width.equalTo(100)
-            make.height.equalTo(100)
+            make.centerY.leading.equalToSuperview()
+            make.size.equalTo(100)
         }
         
         button2.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.right.equalToSuperview()
-            make.width.equalTo(100)
-            make.height.equalTo(100)
+            make.centerY.trailing.equalToSuperview()
+            make.size.equalTo(100)
+        }
+        
+        customButton2.snp.makeConstraints {
+            $0.center.equalToSuperview()
+            $0.size.equalTo(100)
         }
     }
     

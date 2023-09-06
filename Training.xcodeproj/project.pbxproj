@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17723ADA2AA8F749008E8DF5 /* CustomButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17723AD92AA8F749008E8DF5 /* CustomButton2.swift */; };
 		B1BF795C70041E081A2DAE5E /* Pods_Training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2139E6CA90D96806BE863C6 /* Pods_Training.framework */; };
 		F785A0DE2AA8D0C1009F3D09 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F785A0DD2AA8D0C1009F3D09 /* MainView.swift */; };
 		F7A8FA262AA8B4E100933335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A8FA252AA8B4E100933335 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17723AD92AA8F749008E8DF5 /* CustomButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton2.swift; sourceTree = "<group>"; };
 		2A5E03BDC0A09117A5F31F46 /* Pods-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.release.xcconfig"; path = "Target Support Files/Pods-Training/Pods-Training.release.xcconfig"; sourceTree = "<group>"; };
 		8DEE048F5A1FB09DBA1D54A4 /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.debug.xcconfig"; path = "Target Support Files/Pods-Training/Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
 		C2139E6CA90D96806BE863C6 /* Pods_Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +52,6 @@
 				8DEE048F5A1FB09DBA1D54A4 /* Pods-Training.debug.xcconfig */,
 				2A5E03BDC0A09117A5F31F46 /* Pods-Training.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -102,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F7A8FA392AA8B53200933335 /* CustomButton.swift */,
+				17723AD92AA8F749008E8DF5 /* CustomButton2.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -270,6 +272,7 @@
 				F7A8FA262AA8B4E100933335 /* AppDelegate.swift in Sources */,
 				F785A0DE2AA8D0C1009F3D09 /* MainView.swift in Sources */,
 				F7A8FA282AA8B4E100933335 /* SceneDelegate.swift in Sources */,
+				17723ADA2AA8F749008E8DF5 /* CustomButton2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
