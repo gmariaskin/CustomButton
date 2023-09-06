@@ -19,6 +19,10 @@ class CustomButton: UIButton {
         super.init(frame: .zero)
     }
     
+    convenience init(text: String) {
+        self.init(txt: text, cR: 10)
+    }
+    
     
     
     
